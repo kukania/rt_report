@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.19)  15 JUN 2019 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.19)  15 JUN 2019 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -926,38 +926,43 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 58.
+LaTeX Font Info:    Try loading font information for U+msa on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 58.
+LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 58.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
 <image/bg.png, id=1, 298.11375pt x 227.85126pt>
 File: image/bg.png Graphic file (type png)
 <use image/bg.png>
-Package pdftex.def Info: image/bg.png  used on input line 78.
-(pdftex.def)             Requested size: 103.19843pt x 78.87646pt.
-File: image/bg.png Graphic file (type png)
-<use image/bg.png>
-Package pdftex.def Info: image/bg.png  used on input line 86.
-(pdftex.def)             Requested size: 103.19843pt x 78.87646pt.
-File: image/bg.png Graphic file (type png)
-<use image/bg.png>
-Package pdftex.def Info: image/bg.png  used on input line 90.
+Package pdftex.def Info: image/bg.png  used on input line 50.
 (pdftex.def)             Requested size: 103.19843pt x 78.87646pt.
 
+
+LaTeX Warning: Reference `fig:chips' on page 1 undefined on input line 54.
+
+File: image/bg.png Graphic file (type png)
+<use image/bg.png>
+Package pdftex.def Info: image/bg.png  used on input line 58.
+(pdftex.def)             Requested size: 103.19843pt x 78.87646pt.
+File: image/bg.png Graphic file (type png)
+<use image/bg.png>
+Package pdftex.def Info: image/bg.png  used on input line 62.
+(pdftex.def)             Requested size: 103.19843pt x 78.87646pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 95--97
+LaTeX Warning: Reference `fig:chips' on page 1 undefined on input line 69.
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 67--69
 []\LUC/nanummj/m/n/10/c7 |\LUC/nanummj/m/n/10/bc ^^X\LUC/nanummj/m/n/10/c8 ^^A\
 LUC/nanummj/m/n/10/c7 <\LUC/nanummj/m/n/10/b8 \ \LUC/nanummj/m/n/10/c1 1\LUC/na
 nummj/m/n/10/b2 ¥\LUC/nanummj/m/n/10/c0 Á\LUC/nanummj/m/n/10/c7 X \LUC/nanummj/
@@ -967,17 +972,23 @@ m/n/10/bb 8\LUC/nanummj/m/n/10/c8 ^^\\LUC/nanummj/m/n/10/b8 \ \LUC/nanummj/m/n/
 ´\LUC/nanummj/m/n/10/b9 |
  []
 
+
+LaTeX Warning: Reference `fig:PM' on page 1 undefined on input line 70.
+
+File: image/bg.png Graphic file (type png)
+<use image/bg.png>
+Package pdftex.def Info: image/bg.png  used on input line 79.
+(pdftex.def)             Requested size: 103.19843pt x 78.87646pt.
+
+LaTeX Warning: Reference `fig:Map' on page 1 undefined on input line 83.
+
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./image/bg.png>]
 File: image/bg.png Graphic file (type png)
 <use image/bg.png>
-Package pdftex.def Info: image/bg.png  used on input line 107.
-(pdftex.def)             Requested size: 103.19843pt x 78.87646pt.
-File: image/bg.png Graphic file (type png)
-<use image/bg.png>
-Package pdftex.def Info: image/bg.png  used on input line 118.
+Package pdftex.def Info: image/bg.png  used on input line 90.
 (pdftex.def)             Requested size: 103.19843pt x 78.87646pt.
 
 
@@ -995,17 +1006,20 @@ Before submitting the final camera ready copy, remember to:
 
 ] (./report.aux)
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 6281 strings out of 492982
- 92828 string characters out of 6134896
- 167186 words of memory out of 5000000
- 9683 multiletter control sequences out of 15000+600000
- 60696 words of font info for 148 fonts, out of 8000000 for 9000
+ 6247 strings out of 492982
+ 92370 string characters out of 6134896
+ 165136 words of memory out of 5000000
+ 9654 multiletter control sequences out of 15000+600000
+ 54255 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,40p,875b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,40p,875b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb></usr/share/texlive/texm
@@ -1049,7 +1063,7 @@ ype1/nanummjmd7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (2 pages, 1975160 bytes).
+Output written on report.pdf (2 pages, 1976260 bytes).
 PDF statistics:
  190 PDF objects out of 1000 (max. 8388607)
  139 compressed objects within 2 object streams
