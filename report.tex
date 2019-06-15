@@ -89,7 +89,7 @@ GC는 더 이상 유저 쓰기 요청을 처리할 수 없을 때 발생한다. 
 \section{PTSD}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\textwidth]{image/bg.png}
+	\includegraphics[width=0.3\textwidth]{image/PTSD/PTSD.png}
 	\caption{PTSD platform}
 	\label{fig:PTSD}
 \end{figure}
@@ -97,7 +97,7 @@ Fig~\ref{fig:PTSD}는 본 연구에서 제작된 PTSD에 대한 그림이다. PT
 \subsection{Cache Partitioning}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\textwidth]{image/bg.png}
+	\includegraphics[width=0.3\textwidth]{image/PTSD/cache.png}
 	\caption{Cache partition}
 	\label{fig:cache}
 \end{figure}
@@ -117,12 +117,12 @@ cache partition 기법을 적용한다고 하여도 문제점이 한가지 존�
 \subsection{Write Optimization}
 \begin{figure}[hbt]
 	\centering
-	\begin{subfigure}[b]{0.3\textwidth}	
-		\includegraphics[width=\linewidth]{image/bg.png}
+	\begin{subfigure}[b]{0.5\textwidth}	
+		\includegraphics[width=\linewidth]{image/PTSD/Dcache.png}
 		\caption{Different cache layout} \label{fig:Dcache}
 	\end{subfigure}
-	\begin{subfigure}[b]{0.3\textwidth}	
-		\includegraphics[width=\linewidth]{image/bg.png}
+	\begin{subfigure}[b]{0.4\textwidth}	
+		\includegraphics[width=\linewidth]{image/PTSD/batch.png}
 		\caption{Batch update} \label{fig:batch}
 	\end{subfigure}
 \end{figure}
@@ -145,7 +145,7 @@ cache partition 기법을 적용한다고 하여도 문제점이 한가지 존�
 \section{Evaluation}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\textwidth]{image/bg.png}
+	\includegraphics[width=0.5\textwidth]{image/EVAL/zync.png}
 	\caption{임베디드 보드}
 	\label{fig:zync}
 \end{figure}
@@ -155,7 +155,7 @@ PTSD의 기법의 효과를 증명하기 위해 우리는 PTSD(PART), Demand-bas
 \subsection{Read CDF Trend}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\textwidth]{image/bg.png}
+	\includegraphics[width=0.4\textwidth]{image/EVAL/cdf.png}
 	\caption{cdf 결과}
 	\label{fig:cdf1}
 \end{figure}
@@ -163,12 +163,12 @@ Fig~\ref{fig:cdf1}은 cache partition의 효과를 보이기 위해 진행한 �
 평균적인 성능은 개선된것을 확인할 수 있었으나 중요한 꼬리 응답시간에서는 거의 효과가 없다는 것을 알 수 있다. 원인은 PTSD 섹션에서 설명한 비동기 쓰기 연산으로 인한 것이다.\par
 \begin{figure}[hbt]
 	\centering
-	\begin{subfigure}[b]{0.2\textwidth}	
-		\includegraphics[width=\linewidth]{image/bg.png}
+	\begin{subfigure}[b]{0.3\textwidth}	
+		\includegraphics[width=\linewidth]{image/EVAL/cdf2.png}
 		\caption{cdf} \label{fig:cdf2}
 	\end{subfigure}
-	\begin{subfigure}[b]{0.2\textwidth}	
-		\includegraphics[width=\linewidth]{image/bg.png}
+	\begin{subfigure}[b]{0.3\textwidth}	
+		\includegraphics[width=\linewidth]{image/EVAL/cdf2_zoom.png}
 		\caption{zoom in} \label{fig:cdf2_zoom}
 	\end{subfigure}
 	\caption{PTSD scheduling cdf}
@@ -177,7 +177,7 @@ Fig~\ref{fig:cdf2}와 Fig~\ref{fig:cdf2_zoom}은 scheduling알고리즘을 추�
 \subsection{Read distribution}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\textwidth]{image/bg.png}
+	\includegraphics[width=0.4\textwidth]{image/EVAL/dist.png}
 	\caption{읽기요청의  응답 시간 분포}
 	\label{fig:dist}
 \end{figure}
@@ -185,7 +185,7 @@ CDF의 형태가 아닌 각각의 응답 시간의 분포도를 찍어서 보았
 \subsection{Write performance}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\textwidth]{image/bg.png}
+	\includegraphics[width=0.3\textwidth]{image/EVAL/through.png}
 	\caption{총 성능}
 	\label{fig:through}
 \end{figure}
