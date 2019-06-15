@@ -80,19 +80,26 @@ GC는 더 이상 유저 쓰기 요청을 처리할 수 없을 때 발생한다. 
 	\caption{Variable Mapping Method in limited DRAM}
 	\label{fig:Map}
 \end{figure}
-앞서 언급했듯이 본 논문은 DRAM이 제한된 환경에서의 연구를 목적으로 하고 있다. 이때까지 제시된 논문은 Fig~\ref{fig:Map}와 같이 많은 문제점이 존재한다. 블록 단위의 사상과 Hybrid사상은 읽기 연산의 경우 한 번에 접근이 가능하지만 GC연산이 빈번하게 호출되기 때문에 쓰기 연산이 많이 발생하게 되고 쓰기연산은 NAND의 수명을 줄일 뿐 아니라 많은 시간이 소모 되기 때문에 사용하기 어렵다. 반면 Demand Based사상의 경우 합리적인 읽기 쓰기 비용을 가지고 있지만 Cache의 Dirty가 eviction 문제로 인해 읽기 연산의 시간을 예상하기 힘들다.
+앞서 언급했듯이 본 논문은 DRAM이 제한된 환경에서의 연구를 목적으로 하고 있다. 이때까지 제시된 논문은 Fig~\ref{fig:Map}와 같이 많은 문제점이 존재한다. 블록 단위의 사상과 Hybrid사상은 읽기 연산의 경우 한 번에 접근이 가능하지만 GC연산이 빈번하게 호출되기 때문에 쓰기 연산이 많이 발생하게 되고 쓰기연산은 NAND의 수명을 줄일 뿐 아니라 많은 시간이 소모 되기 때문에 사용하기 어렵다. 반면 Demand Based사상의 경우 합리적인 읽기 쓰기 비용을 가지고 있지만 Cache의 Dirty가 eviction 문제로 인해 읽기 연산의 시간을 예상하기 힘들다. PTSD는 Demand Based 사상을 기반을 하여 해당 사상의 문제점을 분석해 새로운 방법을 제시한다.
 
 \subsection{Demnad based FTL}
 
 \section{PTSD}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.2\textwidth]{image/bg.png}
-	\caption{Variable Mapping Method in limited DRAM}
+	\includegraphics[width=0.3\textwidth]{image/bg.png}
+	\caption{PTSD platform}
 	\label{fig:PTSD}
 \end{figure}
-
+Fig~\ref{fig:PTSD}는 본 연구에서 제작된 PTSD에 대한 그림이다. PTSD는 크게 세가지 부분으로 나뉘며 위쪽의 유저의 요청을 처리하는 Interface 계층과 실제적인 알고리즘이 동작하는 Algorithm계층, 마지막으로 NAND와 직접 적으로 통신하는 Device 계층이 있다. Interface에는 유저의 요청을 보관하는 큐가 존재하며 이 큐에서 요청들을 가져와 Alogrithm 계층으로 보내준다. Alogorithm 계층을 지난 요청들은 PPA를 할당 받게 되고 Device 계층을 통해 NAND에 접근하게 된다.
 \subsection{Cache Partitioning}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\textwidth]{image/bg.png}
+	\caption{Cache partition}
+	\label{fig:cache}}
+\end{figure}
+Motivation 섹션에서 보았듯이 Demand-based FTL에서 읽기 요청을 보장하지 못하는 것은 Cache 공간이 부족한 상황에서 Dirty eviction이 발생해 읽기를 수행함에도 불구하고 쓰기 연산이 발생하기 때문이다. 이러한 문제점을 해결하기위해 Cache Partition 기법을 제안한다. 이는 Fig~\ref{fid:cache}와 같이 페이지 단위의 CMT 구조를 기반으로 고안되었다. SSD 내부 메모리에서 CMT로 사용되는 영역을 논리적으로 나누어, clean 영역에서는 clean 상태의 사상
 \subsection{I/O Scheduling}
 \subsection{Write Optimization}
 \subsection{Future Work}
