@@ -101,11 +101,10 @@ PTSD를 제안한다. PTSD는 캐시 영역을 나눔으로써 불필요한 사�
 \subsection{NAND Flash and Address Mapping}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.2\textwidth]{image/bg.png}
-	\caption{NAND Flash Chip}
+	\includegraphics[width=0.4\textwidth]{image/bg/chips.png}
+	\caption{NAND Flash Chip \cite{b1}}
 	\label{fig:chips}
 \end{figure}
-
 NAND Flash의 물리적 구조는 Fig~\ref{fig:chips}과 같이 나타나 있다. NAND 칩들이 레이드 0와 비슷한
 형태로 버스에 묶여져 있으며 각각의 버스는 동시에 data를 전송할 수 있는 병렬 단위가 된다.
 또한 버스의 data 전송 시간 보다 칩 하나의 처리시간이 더 오래걸리기 때문에 버스에 붙여진 여러개의 칩도
@@ -114,26 +113,12 @@ NAND Flash의 물리적 구조는 Fig~\ref{fig:chips}과 같이 나타나 있다
 블록 단위로 이루어진다. 이러한 두가지 기기의 특성 때문에 유저의 요청을 처리하기 위해
 논리적 주소와 물리적 주소의 사상이 필요하다. \par
 
-\begin{figure}[h]
-	\centering
-	\begin{subfigure}[b]{0.2\textwidth}	
-		\includegraphics[width=\linewidth]{image/bg.png}
-		\caption{Read/Write} \label{fig:PM}
-	\end{subfigure}
-	\begin{subfigure}[b]{0.2\textwidth}	
-		\includegraphics[width=\linewidth]{image/bg.png}
-		\caption{Garbage Collection} \label{fig:GC}
-	\end{subfigure}
-	\caption{Page Mapping}
-\end{figure}
-
 일반적으로 성능상의 문제로 인해 사상 정보 전체를 DRAM에 저장해 두는 Page Mapping 기법을 사용한다.
 DRAM 내부에는 LBA-PPA 쌍의 table이 존재하고 사용자의 요청은 이러한 사상 정보를 참고해 처리하게 된다.
 PPA는 LBA와 독립적으로 존재하기 때문에 LBA에 특정한 PPA에 할당할 수 있으며 NAND Flash는 이러한 특징을
 이용해 Fig~\ref{fig:chips}에서의 병렬 유닛에 맞추어 PPA를 할당하게 된다.\par
 
-Fig~\ref{fig:PM}은 Page Mapping에서의 읽기/쓰기의 흐름을 보여준다. 들어오는 쓰기 요청은 물리적 공간에서
-Logging의 형태로 적히게 되며 존재하던 정보가 새로이 들어오게 될 때 기존의 물리적 페이지가 더 이상
+들어오는 쓰기 요청은 물리적 공간에서Logging의 형태로 적히게 되며 존재하던 정보가 새로이 들어오게 될 때 기존의 물리적 페이지가 더 이상
 쓰이지 않는다는 Invalid 표시를 해두고 나중에 Garbage Collection(GC)를 통해 해당 영역을 다시 쓰게끔 동작한다.
 
 \subsection{Garbage Collection(GC)}
@@ -150,7 +135,7 @@ over provisioning영역이 존재한다. 기본적으로 이 영역의 비율은
 \subsection{FTLs on limited memory environment}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.2\textwidth]{image/bg.png}
+	\includegraphics[width=0.5\textwidth]{image/bg/Map.png}
 	\caption{Variable Mapping Method in limited DRAM}
 	\label{fig:Map}
 \end{figure}
@@ -289,7 +274,7 @@ flush를 하지 않고 write\_stop flag를 set 한다. 해당 flag가 설정이 
 		\caption{Batch update} \label{fig:batch}
 	\end{subfigure}
 \end{figure}
-~\ref{fig:cache}처럼 페이지 단위로 CMT를 구성하면, 임의 트래픽의 워크로드에서 부가적인 쓰기 연산이
+Fig~\ref{fig:cache}처럼 페이지 단위로 CMT를 구성하면, 임의 트래픽의 워크로드에서 부가적인 쓰기 연산이
 많아지고 쓰기 성능이 저하되는 문제가 발생한다. 이는 추후에 평가에서도 볼 수 있듯 demand-based FTL은
 물론이고, cache partition 상황에서 더 뚜렷하게 나타난다. 때문에 우리는 기존의 cache partion기법에서 
 dirty 영역을 엔트리 단위로 이어 쓰도록 하여 쓰기 성능을 최적화 하였다. 읽기 요청은 기존 구조와 같기
@@ -391,7 +376,7 @@ Fig~\ref{fig:cdf2}의 경우를 보았을 때 scheduling이 추가 했을 때 �
 	\caption{읽기요청의  응답 시간 분포}
 	\label{fig:dist}
 \end{figure}
-CDF의 형태가 아닌 각각의 응답 시간의 분포도를 찍어서 보았다. 해당 그래프를 통해 이번 연구의 
+CDF의 형태가 아닌 각각의 응답 시간의 분포도를 찍어서 보았다(Fig~\ref{fig:dist}). 해당 그래프를 통해 이번 연구의 
 큰 목표였단 읽기 응답시간의 분포를 앞으로 당기는 것을 확연히 보여줄 수 있었다.
 \subsection{Write performance}
 \begin{figure}[h]
@@ -400,7 +385,7 @@ CDF의 형태가 아닌 각각의 응답 시간의 분포도를 찍어서 보았
 	\caption{총 성능}
 	\label{fig:through}
 \end{figure}
-쓰기 성능의 개선 효과를 보기 위해 총 성능 또한 각 알고리즘 별로 찍어 보았다. PART에 비해 
+쓰기 성능의 개선 효과를 보기 위해 총 성능 또한 각 알고리즘 별로 찍어 보았다(Fig~\ref{fig:through}). PART에 비해 
 PART-SCHED의 경우 약간 성능이 하락 하는 것을 보였는데 해당 원인이 scheduling으로 인한 성능 
 저하로 보인다. WRITEOPT의 경우 OPT를 제외한 모든 곳보다 성능상 우위에 있다는 것을 알 수 있는데 
 엔트리 단위의 CMT 관리가 효율적이라는 것을 보인다. 해당 결과는 PART-SCHED에 비해 약 10\%가량 개선이 
@@ -441,7 +426,8 @@ For papers published in translation journals, please give the English
 citation first, followed by the original foreign-language citation \cite{b6}.
 
 \begin{thebibliography}{00}
-\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+
+\bibitem{b1} PartFTL
 \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
 \bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
 \bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
