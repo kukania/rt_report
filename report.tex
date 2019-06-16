@@ -15,17 +15,15 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{PTSD: \textbf{P}ar\textbf{T}itioned Cache and Request \textbf{S}cheduling with \textbf{D}emand-based FTL}
+\title{\textit{PTSD}: \textbf{P}ar\textbf{T}itioned Cache and \\Request \textbf{S}cheduling in \textbf{D}emand-based FTL}
 
 \author{\IEEEauthorblockN{Junsu Im}
-\IEEEauthorblockA{\textit{ICE} \\
-\textit{DGIST}\\
+\IEEEauthorblockA{\textit{ICE, DGIST} \\
 junsu\_im@dgist.ac.kr
 }
 \and
 \IEEEauthorblockN{Jinwook Bae}
-\IEEEauthorblockA{\textit{ICE} \\
-\textit{DGIST}\\
+\IEEEauthorblockA{\textit{ICE, DGIST} \\
 jinwook.bae@dgist.ac.kr}
 }
 
@@ -43,16 +41,16 @@ component, formatting, style, styling, insert
 
 \section{Introduction}
 
-실시간 임베디드 시스템에서는 보조 기억 장치에서 데이터를 실시간으로 읽고 써야하는 수요가 늘어나고 있다.
+실시간 임베디드 시스템에서는 보조 기억 장치에 데이터를 실시간으로 읽고 써야하는 수요가 늘어나고 있다.
 무인 자동차나 (Autonomous car)나 무인 항공기 (Unmanned Aerial Vehicle, UAV)와 같이 자율 주행차의 개발이 이어지면서
-해당 시스템이 생산하는 센서 데이터의 양은 점점 더 늘어났다. 카메라나 LIDAR 센서는 초당 수십 MB의 데이터를 생산하고,
-이와 같은 센서를 수십개 탑재하고 있는 임베디드 시스템에서는 하루에 약 4TB의 센서 데이터를 생산하고 있다 (cite).
+해당 시스템이 생산하는 센서 데이터의 양은 더욱 늘어났다. 카메라나 LIDAR 센서는 초당 수십 MB의 데이터를 생산하고,
+실제로 이와 같은 센서를 수십 개 탑재하고 있는 자율 주행 자동차에서는 하루에 약 4TB의 센서 데이터를 생산하고 있다 \cite{b9}.
 실시간으로 경로를 계산하고 사고를 방지하는 등의 Mission critical 작업을 수행해야하는 응용프로그램은
-생산된 센서 데이터를 가공하여 연산에 활용한다. 하지만 제한된 메모리를 가지는 임베디드 시스템으로서는 이렇게 높은 속도의
-Data stream은 물리적으로 부담스러울 수밖에 없다. 들어오는 센서 데이터를 전부 메모리에 유지시키지 못하기 때문에,
+생산된 센서 데이터를 가공하여 연산에 활용한다. 하지만 제한된 메모리를 가지는 임베디드 시스템으로서는 높은 속도의
+Data stream이 물리적으로 부담스러울 수밖에 없다. 들어오는 센서 데이터를 전부 메모리에 유지시키지 못하기 때문에,
 처리할 데이터를 먼저 쓰고 필요할 때 Swapping 방식으로 읽어서 처리해야 한다. \par
 
-부족한 메모리로 인해서 보조 기억 장치로의 File I/O는 자연스럽게 발생하게 된다. 하지만 실시간성을 보장하기 위해서는
+이처럼 부족한 메모리로 인해서 보조 기억 장치로의 File I/O는 자연스럽게 발생하게 된다. 하지만 실시간성을 보장하기 위해서는
 File I/O의 응답시간이 예측 가능해야하며, 실시간 작업에 영향이 없도록 충분히 빨라야 한다. 특히 쓰기 연산은
 비동기 작업으로 수행 가능하지만, 읽기 연산은 데이터를 읽은 후에 작업을 수행하는 동기 방식으로 진행되므로
 전체 시스템의 실시간성에 큰 영향을 미친다. 때문에 읽기 연산의 최대 응답시간을 가능한 짧게 만족시킬 필요가 있다. \par
@@ -67,10 +65,10 @@ GC는 블록 내의 유효한 페이지를 읽어서 복사 후 옮겨 쓰고, �
 GC에 드는 시간을 최대한 감소시킬 수 있다. 혹은 PaRT-FTL과 같이 NAND Flash Chip 수준에서 셋을 나눠서
 읽기 연산에서 GC의 비용을 온전히 없앨 수 있기도 하다. \par
 
-\begin{figure}[h]
+\begin{figure}[t]
 	\centering
-	\includegraphics[width=0.2\textwidth]{image/bg.png}
-	\caption{Growing capacity of SSDs}
+	\includegraphics[width=0.5\textwidth]{image/intro/ssd_size.png}
+	\caption{Growing capacity of SSDs and Memory requirements}
 	\label{fig:SSD_size}
 \end{figure}
 
@@ -164,7 +162,7 @@ Fig~\ref{fig:Map}와 같이 많은 문제점이 존재한다. 블록 단위의 �
 비용을 가지고 있지만 Cache의 Dirty가 eviction 문제로 인해 읽기 연산의 시간을 예상하기 힘들다.
 PTSD는 Demand Based 사상을 기반을 하여 해당 사상의 문제점을 분석해 새로운 방법을 제시한다.
 
-\subsection{Demnad based FTL}
+\subsection{Demnad based FTL (DFTL)}
 
 DFTL은 메모리 환경에서 가상 주소를 물리 주소로 빠르게 변환하기 위해 사용하는
 TLB (Translation Look-aside Buffer)의 동작 방식으로부터 차용되었다. 기본적으로 사상 관계는
@@ -450,5 +448,7 @@ citation first, followed by the original foreign-language citation \cite{b6}.
 \bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
 \bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
 \bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+\bibitem{b8} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+\bibitem{b9} Intel article, ``Data is the new oil in the future of automated driving,'' https://newsroom.intel.com/editorials/krzanich-the-future-of-automated-driving/\#gs.ijpzqu, 2016.
 \end{thebibliography}
 \end{document}
