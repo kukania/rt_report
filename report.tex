@@ -65,8 +65,8 @@ File I/O의 응답시간이 예측 가능해야하며, 실시간 작업에 영�
 큰 단점을 보인다. 그 이유는 NAND Flash 특성 상 읽기/쓰기의 단위와 지우는 단위가 다르기 때문인데,
 이로 인해 In-place Update가 불가능 하고 Garbage Collection (이하 GC) 작업이 필요하게 된다.
 GC는 블록 내의 유효한 페이지를 읽어서 복사 후 옮겨 쓰고, 블록을 지우기 때문에 많은 시간이 소모된다.
-그러나 앞선 연구들에서 볼 수 있듯, Over-Provisioning \cite{}이나 Partial Garbage Collection \cite{}을 통해 
-GC에 드는 시간을 최대한 감소시킬 수 있다. 혹은 PaRT-FTL \cite{b2}과 같이 NAND Flash Chip 수준에서 셋을 나눠서
+그러나 앞선 연구들에서 볼 수 있듯, Over-Provisioning이나 Partial Garbage Collection을 통해 
+GC에 드는 시간을 최대한 감소시킬 수 있다 \cite{b3, b5, b6}. 혹은 PaRT-FTL \cite{b2}과 같이 NAND Flash Chip 수준에서 셋을 나눠서
 읽기 연산에서 GC의 비용을 온전히 없앨 수 있기도 하다. \par
 
 \begin{figure}[t]
@@ -81,7 +81,7 @@ GC에 드는 시간을 최대한 감소시킬 수 있다. 혹은 PaRT-FTL \cite{
 함께 커진다. 단적인 예로 128TB SSD의 전체 주소 사상 관계를 저장하기 위해서는 128GB의 DRAM이 필요하게 된다.
 하지만 SSD 또한 제한된 폼팩터에 올려진 임베디드 시스템이기 때문에 대용량의 DRAM을 적재하는 것은 물리적으로 한계가 있다.
 따라서 전체 테이블은 SSD에 저장하는 동시에, 자주 사용되는 주소 사상 관계를 메모리에 유지하는 요구 기반 FTL
-(Demand-based Flash Translation Layer, 이하 DFTL)이 새로운 대안으로 주목 받고 있다. \par
+(Demand-based Flash Translation Layer, 이하 DFTL)이 새로운 대안으로 주목 받고 있다 \cite{b4}. \par
 
 우리는 DFTL의 캐시 영역을 읽기/쓰기 영역으로 분리하고 사용자 요청을 스케줄링해서 읽기 응답시간을 보장하는
 PTSD를 제안한다. PTSD는 캐시 영역을 나눔으로써 불필요한 사상 페이지 쓰기 연산을 줄여서 잠재적인 GC 비용을 없애고
@@ -106,7 +106,7 @@ PTSD를 제안한다. PTSD는 캐시 영역을 나눔으로써 불필요한 사�
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.45\textwidth]{image/bg/chips.png}
-	\caption{NAND Flash Chip \cite{b1}}
+	\caption{NAND Flash Chip \cite{b2}}
 	\label{fig:chips}
 \end{figure}
 NAND Flash의 물리적 구조는 Fig~\ref{fig:chips}과 같이 나타나 있다. NAND 칩들이 레이드 0와 비슷한
@@ -154,7 +154,7 @@ PTSD는 Demand Based 사상을 기반을 하여 해당 사상의 문제점을 �
 \subsection{Demnad based FTL (DFTL)}
 
 DFTL은 메모리 환경에서 가상 주소를 물리 주소로 빠르게 변환하기 위해 사용하는
-TLB (Translation Look-aside Buffer)의 동작 방식으로부터 차용되었다. 기본적으로 사상 관계는
+TLB (Translation Look-aside Buffer)의 동작 방식으로부터 차용되었다 \cite{b4}. 기본적으로 사상 관계는
 CMT (Cached Mapping Table)라는 테이블 형태로 메모리에 유지하면서 빠르게 주소 변환에 사용한다.
 메모리에 올라오지 않는 주소에 대한 사용자 요청이 들어오면 다음과 같이 요구 기반 방식으로 진행된다.
 1) 각 테이블의 정보를 담고 있는 GTD (Global Table Directory)를 참조한다. 그리고 2) 저장 장치로부터
@@ -172,7 +172,7 @@ DFTL의 사상 페이지를 읽고 쓸 뿐 아니라 GC를 하는 과정은 메�
 
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=0.45\textwidth]{image/bg/dftl_analysis.png}
+	\includegraphics[width=0.4\textwidth]{image/bg/dftl_analysis.png}
 	\caption{DFTL read latency analysis}
 	\label{fig:DFTL_cdf}
 \end{figure}
@@ -246,7 +246,7 @@ Motivation 섹션에서 보았듯이 Demand-based FTL에서 읽기 요청을 보
 
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=0.4\textwidth]{image/PTSD/cache.png}
+	\includegraphics[width=0.35\textwidth]{image/PTSD/cache.png}
 	\caption{Partitioned cache layout}
 	\label{fig:cache}
 \end{figure}
@@ -268,13 +268,13 @@ flush를 하지 않고 write\_stop flag를 set 한다. 해당 flag가 설정이 
 요청의 응답 시간을 보호하도록 scheduling을 진행한다.\par
 
 \subsection{Write Optimization}
-\begin{figure}[hbt]
+\begin{figure}[t]
 	\centering
-	\begin{subfigure}[b]{0.45\textwidth}	
+	\begin{subfigure}[b]{0.4\textwidth}	
 		\includegraphics[width=\linewidth]{image/PTSD/Dcache.png}
 		\caption{Different cache layout} \label{fig:Dcache}
 	\end{subfigure}
-	\begin{subfigure}[b]{0.4\textwidth}	
+	\begin{subfigure}[b]{0.35\textwidth}	
 		\includegraphics[width=\linewidth]{image/PTSD/batch.png}
 		\caption{Batch update} \label{fig:batch}
 	\end{subfigure}
@@ -332,7 +332,7 @@ PTSD의 기법의 효과를 증명하기 위해 우리는 PTSD(PART), Demand-bas
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{image/EVAL/zync.png}
-	\caption{Embedded board }
+	\caption{Embedded board}
 	\label{fig:zync}
 \end{figure}
 
@@ -347,13 +347,13 @@ PTSD의 기법의 효과를 증명하기 위해 우리는 PTSD(PART), Demand-bas
 	\centering
 	\begin{subfigure}[b]{0.4\textwidth}	
 		\includegraphics[width=\linewidth]{image/EVAL/cdf2.png}
-		\caption{Read latency trend (CDF)} \label{fig:cdf2}
+		\caption{Read latency trend} \label{fig:cdf2}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.4\textwidth}	
 		\includegraphics[width=\linewidth]{image/EVAL/cdf2_zoom.png}
-		\caption{zoom in} \label{fig:cdf2_zoom}
+		\caption{Read tail latency} \label{fig:cdf2_zoom}
 	\end{subfigure}
-	\caption{Read tail latency (CDF)}
+	\caption{Read latency CDF}
 \end{figure}
 
 먼저 cache partition의 효과를 보이기 위해 실험을 진행하였다. Fig~\ref{fig:cdf2}의 파란 선(PART)을 보면
@@ -404,34 +404,17 @@ PART-SCHED의 경우 약간 성능이 하락 하는 것을 보였는데 해당 �
 실험에 비해 1.15배 성능이 개선됨을 보였다.\par
 
 이후 연구에서는 scheduling 기법의 변화와 워크로드 특성을 반영한 partition기법을 통해 PTSD가 더 
-잘 동작하도록 수정할 예정이다.
-
-\section*{References}
-
-Please number citations consecutively within brackets \cite{b1}. The 
-sentence punctuation follows the bracket \cite{b2}. Refer simply to the reference 
-number, as in \cite{b3}---do not use ``Ref. \cite{b3}'' or ``reference \cite{b3}'' except at 
-the beginning of a sentence: ``Reference \cite{b3} was the first $\ldots$''
-
-Number footnotes separately in superscripts. Place the actual footnote at 
-the bottom of the column in which it was cited. Do not put footnotes in the 
-abstract or reference list. Use letters for table footnotes.
-
-Unless there are six authors or more give all authors' names; do not use 
-``et al.''. Papers that have not been published, even if they have been 
-submitted for publication, should be cited as ``unpublished'' \cite{b4}. Papers 
-that have been accepted for publication should be cited as ``in press'' \cite{b5}. 
-Capitalize only the first word in a paper title, except for proper nouns and 
-element symbols.
-
-For papers published in translation journals, please give the English 
-citation first, followed by the original foreign-language citation \cite{b6}.
+잘 동작하도록 수정할 예정이다.\\
 
 \begin{thebibliography}{00}
 
 \bibitem{b1} Intel article, ``Data is the new oil in the future of automated driving,'' https://newsroom.intel.com/editorials/krzanich-the-future-of-automated-driving/\#gs.ijpzqu, 2016.
-\bibitem{b2} PartFTL
-\bibitem{b3} WAO-GC
-\bibitem{b4} DFTL
+\bibitem{b2} K. Missimer, R. West, ``Partitioned Real-Time NAND Flash Storage,'' In Proceedings of IEEE Real-Time Systems Symposium (RTSS), pp.185-195, 2018.
+\bibitem{b3} Q. Zhang, X. Li, L. Wang, T. Zhang, Y. Wang, and Z. Shao, ``Optimizing Deterministic Garbage Collection in NAND Flash Storage Systems,'' in Proceedings of the Real-Time and Embedded Technology and Applications Symposium (RTAS ’15). IEEE, 2015.
+\bibitem{b4} A. Gupta, Y. Kim, B. Urgaonkar, ``DFTL: a flash translation layer employing demand-based selective caching of page-level address mappings," Journal of ACM, Vol.44, No. 3, pp. 229-240, 2009.
+\bibitem{b5} Z. Qin, Y. Wang, D. Liu, and Z. Shao, ``Real-time Flash Translation Layer for NAND Flash Memory Storage Systems,'' in Proceedings
+of the IEEE Real-Time and Embedded Technology and Applications Symposium, 2012.
+\bibitem{b6} S. Choudhuri and T. Givargis, ``Deterministic Service Guarantees for NAND Flash using Partial Block Cleaning,'' in Proceedings of the
+IEEE/ACM/IFIP International Conference on Hardware/Software Codesign and System Synthesis, 2008.
 \end{thebibliography}
 \end{document}

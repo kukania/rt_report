@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.19)  16 JUN 2019 20:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.11)  16 JUN 2019 21:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -984,33 +984,49 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<image/bg.png, id=1, 298.11375pt x 227.85126pt>
-File: image/bg.png Graphic file (type png)
-<use image/bg.png>
-Package pdftex.def Info: image/bg.png  used on input line 76.
-(pdftex.def)             Requested size: 103.19843pt x 78.87646pt.
+<image/intro/ssd_size.png, id=1, 827.34094pt x 454.69875pt>
+File: image/intro/ssd_size.png Graphic file (type png)
+<use image/intro/ssd_size.png>
+Package pdftex.def Info: image/intro/ssd_size.png  used on input line 74.
+(pdftex.def)             Requested size: 258.0pt x 141.79466pt.
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+Overfull \hbox (6.0pt too wide) in paragraph at lines 74--75
+ [][] 
+ []
 
 
- <./image/bg.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 96.
+Underfull \vbox (badness 1348) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <./image/intro/ssd_size.png>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 96.
+LaTeX Font Info:    Try loading font information for U+msb on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<image/bg/chips.png, id=81, 1403.2425pt x 955.57pt>
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
+
+ []
+
+<image/bg/chips.png, id=83, 1403.2425pt x 955.57pt>
 File: image/bg/chips.png Graphic file (type png)
 <use image/bg/chips.png>
-Package pdftex.def Info: image/bg/chips.png  used on input line 110.
-(pdftex.def)             Requested size: 206.39685pt x 140.54437pt.
+Package pdftex.def Info: image/bg/chips.png  used on input line 108.
+(pdftex.def)             Requested size: 232.19843pt x 158.11424pt.
 
-Underfull \hbox (badness 1354) in paragraph at lines 122--125
+Underfull \hbox (badness 1354) in paragraph at lines 120--123
 []\LUC/nanummj/m/n/10/c7 |\LUC/nanummj/m/n/10/bc ^^X\LUC/nanummj/m/n/10/c8 ^^A\
 LUC/nanummj/m/n/10/c7 <\LUC/nanummj/m/n/10/b8 \ \LUC/nanummj/m/n/10/c1 1\LUC/na
 nummj/m/n/10/b2 •\LUC/nanummj/m/n/10/c0 ¡\LUC/nanummj/m/n/10/c7 X \LUC/nanummj/
@@ -1020,67 +1036,81 @@ m/n/10/bb 8\LUC/nanummj/m/n/10/c8 ^^\\LUC/nanummj/m/n/10/b8 \ \LUC/nanummj/m/n/
 ¥\LUC/nanummj/m/n/10/b9 |
  []
 
-<image/bg/Map.png, id=82, 1204.5pt x 322.20375pt>
+<image/bg/Map.png, id=84, 1204.5pt x 322.20375pt>
 File: image/bg/Map.png Graphic file (type png)
 <use image/bg/Map.png>
-Package pdftex.def Info: image/bg/Map.png  used on input line 144.
+Package pdftex.def Info: image/bg/Map.png  used on input line 142.
 (pdftex.def)             Requested size: 258.0pt x 69.01187pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 144--145
+Overfull \hbox (6.0pt too wide) in paragraph at lines 142--143
  [][] 
  []
 
 [2 <./image/bg/chips.png> <./image/bg/Map.png>]
-File: image/bg.png Graphic file (type png)
-<use image/bg.png>
-Package pdftex.def Info: image/bg.png  used on input line 177.
-(pdftex.def)             Requested size: 103.19843pt x 78.87646pt.
-<image/PTSD/PTSD.png, id=89, 1265.72874pt x 903.375pt>
+<image/bg/dftl_analysis.png, id=91, 837.88031pt x 610.53094pt>
+File: image/bg/dftl_analysis.png Graphic file (type png)
+<use image/bg/dftl_analysis.png>
+Package pdftex.def Info: image/bg/dftl_analysis.png  used on input line 175.
+(pdftex.def)             Requested size: 206.39685pt x 150.3872pt.
+
+Underfull \hbox (badness 1424) in paragraph at lines 180--187
+\LUC/nanummj/m/n/10/c7 Q\LUC/nanummj/m/n/10/b2 ı\LUC/nanummj/m/n/10/c2 ‹\LUC/na
+nummj/m/n/10/ac ^^D\LUC/nanummj/m/n/10/c7 D \LUC/nanummj/m/n/10/bc Ù\LUC/nanumm
+j/m/n/10/c7 x\LUC/nanummj/m/n/10/b2 ‰\OT1/ptm/m/n/10 . \LUC/nanummj/m/n/10/c7 t
+\LUC/nanummj/m/n/10/b2 î \LUC/nanummj/m/n/10/c0 ¨\LUC/nanummj/m/n/10/c6 ©\LUC/n
+anummj/m/n/10/c7 ê \LUC/nanummj/m/n/10/c6 î\LUC/nanummj/m/n/10/cc ≠ ò\LUC/nanum
+mj/m/n/10/b9 ¨ \LUC/nanummj/m/n/10/c9 ^^Q\LUC/nanummj/m/n/10/c5 – \LUC/nanummj/
+m/n/10/c0 ¨¡
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 180--187
+\LUC/nanummj/m/n/10/d3 ò\LUC/nanummj/m/n/10/c7 t\LUC/nanummj/m/n/10/c9 ¿\LUC/na
+nummj/m/n/10/b9 | \LUC/nanummj/m/n/10/c7 }\LUC/nanummj/m/n/10/ac ‡ \LUC/nanummj
+/m/n/10/c4 \LUC/nanummj/m/n/10/b2 î \LUC/nanummj/m/n/10/ac ¸\LUC/nanummj/m/n/1
+0/c8 ^^U\LUC/nanummj/m/n/10/c7 t \LUC/nanummj/m/n/10/bc ^^\\LUC/nanummj/m/n/10/
+c0 ›\LUC/nanummj/m/n/10/d5 X\LUC/nanummj/m/n/10/c9 ¿ \LUC/nanummj/m/n/10/c5 J\L
+UC/nanummj/m/n/10/ae 0 \LUC/nanummj/m/n/10/b5 L\LUC/nanummj/m/n/10/bb 8\LUC/nan
+ummj/m/n/10/c7 t\LUC/nanummj/m/n/10/b2 ‰\OT1/ptm/m/n/10 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--187
+
+ []
+
+<image/PTSD/PTSD.png, id=92, 1265.72874pt x 903.375pt>
 File: image/PTSD/PTSD.png Graphic file (type png)
 <use image/PTSD/PTSD.png>
-Package pdftex.def Info: image/PTSD/PTSD.png  used on input line 194.
-(pdftex.def)             Requested size: 154.80157pt x 110.48177pt.
-<image/PTSD/cache.png, id=90, 821.0675pt x 650.43pt>
+Package pdftex.def Info: image/PTSD/PTSD.png  used on input line 197.
+(pdftex.def)             Requested size: 180.60315pt x 128.89769pt.
+[3 <./image/bg/dftl_analysis.png> <./image/PTSD/PTSD.png>]
+<image/PTSD/cache.png, id=98, 821.0675pt x 650.43pt>
 File: image/PTSD/cache.png Graphic file (type png)
 <use image/PTSD/cache.png>
-Package pdftex.def Info: image/PTSD/cache.png  used on input line 209.
-(pdftex.def)             Requested size: 154.80157pt x 122.6302pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3 <./image/PTSD/PTSD.png> <./image/PTSD/cache.png>]
-<image/PTSD/Dcache.png, id=95, 793.96625pt x 402.50375pt>
+Package pdftex.def Info: image/PTSD/cache.png  used on input line 249.
+(pdftex.def)             Requested size: 180.60315pt x 143.06526pt.
+<image/PTSD/Dcache.png, id=99, 793.96625pt x 402.50375pt>
 File: image/PTSD/Dcache.png Graphic file (type png)
 <use image/PTSD/Dcache.png>
-Package pdftex.def Info: image/PTSD/Dcache.png  used on input line 275.
-(pdftex.def)             Requested size: 258.0pt x 130.79373pt.
-<image/PTSD/batch.png, id=96, 1200.485pt x 1406.25375pt>
+Package pdftex.def Info: image/PTSD/Dcache.png  used on input line 274.
+(pdftex.def)             Requested size: 206.39685pt x 104.63008pt.
+<image/PTSD/batch.png, id=100, 1200.485pt x 1406.25375pt>
 File: image/PTSD/batch.png Graphic file (type png)
 <use image/PTSD/batch.png>
-Package pdftex.def Info: image/PTSD/batch.png  used on input line 279.
-(pdftex.def)             Requested size: 206.39685pt x 241.76364pt.
+Package pdftex.def Info: image/PTSD/batch.png  used on input line 278.
+(pdftex.def)             Requested size: 180.60315pt x 211.55122pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 274--282
- [][] 
+Underfull \vbox (badness 1024) has occurred while \output is active []
+
+ [4 <./image/PTSD/cache.png> <./image/PTSD/Dcache.png> <./image/PTSD/batch.png>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 320--325
+
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4 <./image/PTSD/Dcache.png> <./image/PTSD/batch.png>]
-<image/EVAL/zync.png, id=100, 1235.61626pt x 382.42876pt>
-File: image/EVAL/zync.png Graphic file (type png)
-<use image/EVAL/zync.png>
-Package pdftex.def Info: image/EVAL/zync.png  used on input line 330.
-(pdftex.def)             Requested size: 258.0pt x 79.85141pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 330--331
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 334--336
+Underfull \hbox (badness 10000) in paragraph at lines 329--331
 []\OT1/ptm/m/n/10 PTSD\LUC/nanummj/m/n/10/c7 X \LUC/nanummj/m/n/10/ae 0\LUC/nan
 ummj/m/n/10/bc ï\LUC/nanummj/m/n/10/c7 X \LUC/nanummj/m/n/10/d6 ®\LUC/nanummj/m
 /n/10/ac ¸\LUC/nanummj/m/n/10/b9 | \LUC/nanummj/m/n/10/c9 ù\LUC/nanummj/m/n/10/
@@ -1089,36 +1119,48 @@ ba Ö\LUC/nanummj/m/n/10/d5 X\LUC/nanummj/m/n/10/ae 0 \LUC/nanummj/m/n/10/c7 ^^D
 anummj/m/n/10/b2 î
  []
 
-<image/EVAL/cdf.png, id=101, 481.8pt x 361.35pt>
-File: image/EVAL/cdf.png Graphic file (type png)
-<use image/EVAL/cdf.png>
-Package pdftex.def Info: image/EVAL/cdf.png  used on input line 346.
-(pdftex.def)             Requested size: 206.39685pt x 154.79301pt.
+<image/EVAL/zync.png, id=104, 1235.61626pt x 382.42876pt>
+File: image/EVAL/zync.png Graphic file (type png)
+<use image/EVAL/zync.png>
+Package pdftex.def Info: image/EVAL/zync.png  used on input line 334.
+(pdftex.def)             Requested size: 258.0pt x 79.85141pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (6.0pt too wide) in paragraph at lines 334--335
+ [][] 
+ []
 
-<image/EVAL/cdf2.png, id=102, 481.8pt x 361.35pt>
+<image/EVAL/cdf2.png, id=105, 481.8pt x 361.35pt>
 File: image/EVAL/cdf2.png Graphic file (type png)
 <use image/EVAL/cdf2.png>
-Package pdftex.def Info: image/EVAL/cdf2.png  used on input line 362.
-(pdftex.def)             Requested size: 154.80157pt x 116.09752pt.
-<image/EVAL/cdf2_zoom.png, id=103, 481.8pt x 361.35pt>
+Package pdftex.def Info: image/EVAL/cdf2.png  used on input line 349.
+(pdftex.def)             Requested size: 206.39685pt x 154.79301pt.
+<image/EVAL/cdf2_zoom.png, id=106, 481.8pt x 361.35pt>
 File: image/EVAL/cdf2_zoom.png Graphic file (type png)
 <use image/EVAL/cdf2_zoom.png>
-Package pdftex.def Info: image/EVAL/cdf2_zoom.png  used on input line 366.
-(pdftex.def)             Requested size: 154.80157pt x 116.09752pt.
-[5 <./image/EVAL/zync.png> <./image/EVAL/cdf.png> <./image/EVAL/cdf2.png> <./im
-age/EVAL/cdf2_zoom.png>]
-<image/EVAL/dist.png, id=110, 481.8pt x 361.35pt>
+Package pdftex.def Info: image/EVAL/cdf2_zoom.png  used on input line 353.
+(pdftex.def)             Requested size: 206.39685pt x 154.79301pt.
+[5 <./image/EVAL/zync.png> <./image/EVAL/cdf2.png> <./image/EVAL/cdf2_zoom.png>
+]
+<image/EVAL/dist.png, id=112, 481.8pt x 361.35pt>
 File: image/EVAL/dist.png Graphic file (type png)
 <use image/EVAL/dist.png>
-Package pdftex.def Info: image/EVAL/dist.png  used on input line 381.
+Package pdftex.def Info: image/EVAL/dist.png  used on input line 377.
 (pdftex.def)             Requested size: 206.39685pt x 154.79301pt.
-<image/EVAL/through.png, id=111, 376.40625pt x 301.125pt>
+<image/EVAL/through.png, id=113, 376.40625pt x 301.125pt>
 File: image/EVAL/through.png Graphic file (type png)
 <use image/EVAL/through.png>
-Package pdftex.def Info: image/EVAL/through.png  used on input line 390.
-(pdftex.def)             Requested size: 154.80157pt x 123.8434pt.
+Package pdftex.def Info: image/EVAL/through.png  used on input line 386.
+(pdftex.def)             Requested size: 206.39685pt x 165.12302pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--408
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+\OT1/ptm/m/n/8 https://newsroom.intel.com/editorials/krzanich-the-future-of-aut
+omated-
+ []
 
 
 ** Conference Paper **
@@ -1133,94 +1175,94 @@ Before submitting the final camera ready copy, remember to:
 
 [6 <./image/EVAL/dist.png> <./image/EVAL/through.png>] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 6536 strings out of 492982
- 97079 string characters out of 6134896
- 174301 words of memory out of 5000000
- 9896 multiletter control sequences out of 15000+600000
- 58338 words of font info for 145 fonts, out of 8000000 for 9000
+ 6535 strings out of 492982
+ 97174 string characters out of 6134896
+ 174286 words of memory out of 5000000
+ 9894 multiletter control sequences out of 15000+600000
+ 59474 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,40p,293b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,40p,281b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/sh
 are/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/nanumtype1/nanummjbac.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/nanumtype1/nanummjbad.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/nanumtype1/nanummjbae.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-nanumtype1/nanummjbb1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nan
-umtype1/nanummjbb2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumt
-ype1/nanummjbb3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype
-1/nanummjbb4.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/n
-anummjbb5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanu
-mmjbb6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummj
-bb8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb9
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbba.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbb.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbc.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbd.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc0.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc1.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc2.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc4.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc5.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/nanumtype1/nanummjbc7.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/nanumtype1/nanummjbc8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/nanumtype1/nanummjbc9.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/nanumtype1/nanummjbcc.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/nanumtype1/nanummjbcd.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/nanumtype1/nanummjbd1.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/nanumtype1/nanummjbd2.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/nanumtype1/nanummjbd5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/nanumtype1/nanummjbd6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/na
-numtype1/nanummjmac.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanum
-type1/nanummjmad.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtyp
-e1/nanummjmae.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/
-nanummjmaf.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nan
-ummjmb0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanumm
-jmb1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/nanumtype1/nanummjmbf.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/nanumtype1/nanummjmc0.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/nanumtype1/nanummjmc1.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/nanumtype1/nanummjmc2.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/nanumtype1/nanummjmc3.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/nanumtype1/nanummjmc4.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/nanumtype1/nanummjmc5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/n
-anumtype1/nanummjmc6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanu
-mtype1/nanummjmc7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumty
-pe1/nanummjmc8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1
-/nanummjmc9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/na
-nummjmca.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanum
-mjmcc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjm
-cd.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcf.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (6 pages, 4850779 bytes).
+st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/nanumtype1/nanummjbac.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/nanumtype1/nanummjbad.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/nanumtype1/nanummjbae.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/nanumtype1/nanummjbb1.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/nanumtype1/nanummjbb2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+nanumtype1/nanummjbb3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nan
+umtype1/nanummjbb4.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumt
+ype1/nanummjbb5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype
+1/nanummjbb6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/n
+anummjbb8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanu
+mmjbb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummj
+bba.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbb
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbc.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbd.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc0.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc1.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc2.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc4.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc5.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc7.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/nanumtype1/nanummjbc8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/nanumtype1/nanummjbc9.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/nanumtype1/nanummjbcc.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/nanumtype1/nanummjbcd.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/nanumtype1/nanummjbd1.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/nanumtype1/nanummjbd2.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/nanumtype1/nanummjbd5.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/nanumtype1/nanummjbd6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/nanumtype1/nanummjmac.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/nanumtype1/nanummjmad.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/na
+numtype1/nanummjmae.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanum
+type1/nanummjmaf.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtyp
+e1/nanummjmb0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/
+nanummjmb1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nan
+ummjmb2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanumm
+jmb3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb
+4.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/nanumtype1/nanummjmbf.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/nanumtype1/nanummjmc1.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/nanumtype1/nanummjmc2.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/nanumtype1/nanummjmc3.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/nanumtype1/nanummjmc4.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/nanumtype1/nanummjmc5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/nanumtype1/nanummjmc6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/nanumtype1/nanummjmc7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/n
+anumtype1/nanummjmc8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanu
+mtype1/nanummjmc9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumty
+pe1/nanummjmca.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1
+/nanummjmcc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/na
+nummjmcd.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanum
+mjmce.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjm
+cf.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on report.pdf (6 pages, 4956638 bytes).
 PDF statistics:
- 360 PDF objects out of 1000 (max. 8388607)
- 252 compressed objects within 3 object streams
+ 358 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
