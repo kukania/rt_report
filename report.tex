@@ -32,13 +32,17 @@ jinwook.bae@dgist.ac.kr}
 \maketitle
 
 \begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Paper Title or Abstract.
+본 논문은 Real Time Application이 SSD를 접근할 때 발생하는 Read Latency 문제를 해결하기 위해 작성되었다.
+Real Time Application은 수행 시간이 예상되어야 함으로 I/O 시간도 마찬가지로 특정 시간으로 보장 할 수 있어야 한다.
+임베디드에서 사용 되는 SSD의 경우 DRAM이 제한적이기 때문에 Demand based 사상의 Flash Translate Layer(FTL) 기법을 사용해야 한다.
+하지만 Demand Based FTL은 읽기와 쓰기가 같은 Cache를 공유하기 때문에  최악의 읽기 수행시간이 쓰기 연산에의해 방해 받을 수 있다.
+우리는 해당 문제점에 초점을 두어 읽기와 쓰기의 Cache영역을 분리, 유저 요청의 읽기 최적화된 scheduling을 통해 해결하였다.
+Cache 분리 기법을 통해 기존의 읽기 연산에 최적화된 기존의 cache의 사상관리를 읽기/쓰기 각각 영역에 맞는 최적화 기법을 사용할 수 있었다.
+ 위의 방법을 통해 기존의 Demand Based FTL의 쓰기 성능보다 1.15배 좋으면서 읽기 또한 쓰기 연산에 방해 받지 않는 성능을 얻을 수 있었다.
 \end{abstract}
 
 \begin{IEEEkeywords}
-component, formatting, style, styling, insert
+SSD, long tail latency, Flash Translate Layer, Real Time SSD
 \end{IEEEkeywords}
 
 \section{Introduction}
